@@ -1,4 +1,4 @@
-# turtle_dwa
+# mirte_local-planner
 A `turtlesim` environment to test the Dynamic Window Approach (DWA), a local planner for mobile robots, which is part of the ROS navigation stack. DWA will be used on the Mirthe Master robot as a local planner.
 
 ## Installation
@@ -37,7 +37,7 @@ source devel/setup.bash
 Launch the `turtle_dwa` simulation environment:
 
 ```bash
-roslaunch turtle_dwa turtle_dwa.launch
+roslaunch turtle_dwa mirte_local-planner.launch
 ```
 
 For quick build, source and launch, you can also use the following command directly:
@@ -46,7 +46,7 @@ For quick build, source and launch, you can also use the following command direc
 cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
-roslaunch turtle_dwa turtle_dwa.launch
+roslaunch turtle_dwa mirte_local-planner.launch
 ```
 
 ### Monitor via RViz
