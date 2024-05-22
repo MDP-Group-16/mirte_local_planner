@@ -1,0 +1,7 @@
+<launch>
+  <node name="move_base" pkg="move_base" type="move_base" output="screen" ns="turtle2">
+    <param name="base_global_planner" value="navfn/NavfnROS"/>
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
+    <rosparam file="$(find turtle_dwa)/config/move_base.yaml" command="load"/>
+  </node>
+</launch>

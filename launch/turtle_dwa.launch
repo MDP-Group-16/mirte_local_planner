@@ -1,0 +1,20 @@
+<launch>
+  <!-- Launch turtlesim node -->
+  <node name="turtlesim" pkg="turtlesim" type="turtlesim_node"/>
+
+  <!-- Launch teleop node for manual control -->
+  <node name="teleop" pkg="turtlesim" type="turtle_teleop_key" output="screen"/>
+
+  <!-- Spawn second turtle using rosservice call -->
+  <node name="spawn_turtle2" pkg="rosservice" type="rosservice" args="call /spawn 3.0 3.0 0.79 turtle2" output="screen"/>
+
+  <!-- Broadcast transform for turtle1 and turtle2 -->
+  <node name="tf_broadcaster_turtle1" pkg="turtle_dwa" type="tf_broadcaster.py" args="_turtle_name:=turtle1" output="screen"/>
+  <node name="tf_broadcaster_turtle2" pkg="turtle_dwa" type="tf_broadcaster.py" args="_turtle_name:=turtle2" output="screen"/>
+
+  <!-- Node to publish fake laser scans for turtles -->
+  <node name="fake_laser_scan" pkg="turtle_dwa" type="fake_laser_scan.py" output="screen"/>
+
+  <!-- Include other launch files -->
+  <include file="$(find turtle_dwa)/launch/move_base.launch"/>
+</launch>
