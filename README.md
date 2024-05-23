@@ -72,3 +72,10 @@ Create a new ROS package if not already created:
 ```bash
 cd ~/catkin_ws/src
 catkin_create_pkg mirte_local_planner rospy std_msgs geometry_msgs nav_msgs sensor_msgs tf
+```
+
+## Usage
+
+```bash
+roslaunch mirte_local_planner central_launch_tester.launch
+```

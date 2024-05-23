@@ -8,6 +8,8 @@ mirte-87efdb
 Do this in your own terminal:
 ```bash
 export ROS_IP=192.168.224.YOUR_IP
+```
+```
 export ROS_MASTER_URI=http://192.168.224.39:11311
 ```
 
@@ -30,6 +32,12 @@ export ROS_IP=192.168.224.39
 roslaunch mirte_bringup minimal_master.launch
 ```
 
+## Shutting down Mirte
+
+```bash
+sudo shutdown now
+```
+Now you can switch off the robot physically.
 
 ## Essentials commands
 ```
