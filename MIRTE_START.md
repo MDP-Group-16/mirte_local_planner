@@ -4,17 +4,17 @@ Mirte id:
 mirte-87efdb
 ```
 
+## Setup your own laptop
+Do this in your own terminal:
+```bash
+export ROS_IP=192.168.224.YOUR_IP
+export ROS_MASTER_URI=http://192.168.224.39:11311
+```
+
 ## Connecting with Mirte
 Connect to Mirte
 ```bash
 ssh mirte@192.168.224.39  
-```
-
-```
-export ROS_IP=192.168.224.YOUR_IP
-```
-```bash
-export ROS_MASTER_URI=http://192.168.224.39:11311
 ```
 
 Optional:
@@ -22,12 +22,15 @@ Optional:
 ssh-copy-id mirte@192.168.224.39
 ```
 
-## Launch
+## Setup Mirte (Once)
+Do these commands on Mirte ssh
 ```bash
 sudo service mirte-ros stop
 export ROS_IP=192.168.224.39
 roslaunch mirte_bringup minimal_master.launch
 ```
+
+
 ## Essentials commands
 ```
 sudo service mirte-ros start
