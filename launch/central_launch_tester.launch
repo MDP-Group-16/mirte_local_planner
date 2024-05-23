@@ -1,0 +1,4 @@
+<launch>
+  <!-- Include the local path planner -->
+  <include file="$(find mirte_local_planner)/launch/mirte_local_planner.launch"/>
+</launch>
