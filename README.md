@@ -41,7 +41,7 @@ roslaunch mirte_local_planner central_launch_tester.launch
 Load a Preconfigured RViz Setup:
 
 ```
-rviz -d ~/catkin_ws/src/turtle_dwa/config/turtle_dwa.rviz
+rviz -d ~/catkin_ws/src/mirte_local_planner/config/mirte_local_planner.rviz
 ```
 
 
