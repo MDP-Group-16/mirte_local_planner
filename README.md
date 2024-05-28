@@ -28,7 +28,11 @@ cd ~/catkin_ws
 catkin build
 source devel/setup.bash
 ```
+## Usage
 
+```bash
+roslaunch mirte_local_planner central_launch_tester.launch
+```
 
 
 ## Topics and Services
