@@ -19,6 +19,7 @@ To create a new package with the necessary dependencies, use the following comma
 cd ~/catkin_ws/src
 catkin_create_pkg mirte_local_planner rospy std_msgs geometry_msgs nav_msgs move_base
 ```
+
 ### Build and Source the Workspace
 
 Navigate to your catkin workspace, build the workspace, and source the setup file:
@@ -30,8 +31,17 @@ source devel/setup.bash
 ```
 ## Usage
 
+### Launch
+
 ```bash
 roslaunch mirte_local_planner central_launch_tester.launch
+```
+
+### Monitor via RViz
+Load a Preconfigured RViz Setup:
+
+```
+rviz -d ~/catkin_ws/src/turtle_dwa/config/turtle_dwa.rviz
 ```
 
 
