@@ -30,7 +30,7 @@ DWAPlannerROS:
   publish_cost_grid: true
 
 global_costmap:
-  global_frame: "map"
+  global_frame: "odom" # "map"
   robot_base_frame: "base_link"
   update_frequency: 1.0 # Default 5.0
   publish_frequency: 1.0
@@ -66,4 +66,3 @@ local_costmap:
   inflation_layer:
     inflation_radius: 1.5  # Adjusts the gradient of the costmap
     cost_scaling_factor: 1.0
-
