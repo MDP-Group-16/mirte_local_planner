@@ -11,6 +11,26 @@ The setup involves handling sensor data for obstacle avoidance and publishing ve
 4. **Robot Motion Execution**: The robot executes the velocity commands.
 5. **Feedback and Adjustment**: Odometry data is used to adjust the path and ensure accurate navigation. (Using SLAM later as improved localization)
 
+## Install
+
+To create a new package with the necessary dependencies, use the following commands:
+
+```bash
+cd ~/catkin_ws/src
+catkin_create_pkg mirte_local_planner rospy std_msgs geometry_msgs nav_msgs move_base
+```
+### Build and Source the Workspace
+
+Navigate to your catkin workspace, build the workspace, and source the setup file:
+
+```bash
+cd ~/catkin_ws
+catkin build
+source devel/setup.bash
+```
+
+
+
 ## Topics and Services
 
 ### Global Path Publishing
