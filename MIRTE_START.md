@@ -13,7 +13,7 @@ export ROS_IP=192.168.224.YOUR_IP
 export ROS_MASTER_URI=http://192.168.224.39:11311
 ```
 
-## Connecting with Mirte
+## Connect to Mirte terminal
 Connect to Mirte
 ```bash
 ssh mirte@192.168.224.39  
