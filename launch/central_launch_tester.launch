@@ -1,4 +1,8 @@
 <launch>
   <!-- Include the local path planner -->
   <include file="$(find mirte_local_planner)/launch/mirte_local_planner.launch"/>
+
+  <!-- Launch Rviz -->
+<!--   <node name="rviz_local" pkg="rviz" type="rviz" args="-d $(find mirte_local_planner)/config/mirte_local_planner.rviz" /> -->
+
 </launch>
