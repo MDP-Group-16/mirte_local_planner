@@ -33,6 +33,17 @@ source devel/setup.bash
 
 ### Launch
 
+Launch Local Planner
+```bash
+roslaunch mirte_local_planner mirte_local_planner.launch
+```
+
+Launch AMCL
+```bash
+roslaunch my_robot_gmapping my_amcl.launch
+```
+
+Central Launch Tester which includes both the Local Planner and AMCL
 ```bash
 roslaunch mirte_local_planner central_launch_tester.launch
 ```
