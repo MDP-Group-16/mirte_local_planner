@@ -32,25 +32,15 @@ source devel/setup.bash
 ## Usage
 
 ### Launch
+Before launching the local planner, make sure that there is a `map` and that `amcl` is launched.
 
-Launch Local Planner
-```bash
-roslaunch mirte_local_planner mirte_local_planner.launch
-```
-
-Launch AMCL
-```bash
-roslaunch my_robot_gmapping my_amcl.launch
-```
-
-Central Launch Tester which includes both the Local Planner and AMCL
+Central Launch Tester
 ```bash
 roslaunch mirte_local_planner central_launch_tester.launch
 ```
 
 ### Monitor via RViz
 Load a Preconfigured RViz Setup:
-
 ```
 rviz -d ~/catkin_ws/src/mirte_local_planner/config/mirte_local_planner.rviz
 ```
