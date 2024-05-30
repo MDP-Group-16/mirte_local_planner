@@ -46,7 +46,8 @@ global_costmap:
     - { name: inflation_layer, type: "costmap_2d::InflationLayer" }
   observation_sources: scan
   scan: { sensor_frame: base_link, data_type: LaserScan, topic: /scan, marking: true, clearing: true }
-
+  footprint: [ [ -0.2, -0.2 ], [ -0.2, 0.2 ], [ 0.2, 0.2 ], [ 0.2, -0.2 ] ]
+  footprint_padding: 0.05  # Optional padding around the footprint
 
 local_costmap:
   global_frame: "odom" #
@@ -71,3 +72,5 @@ local_costmap:
   inflation_layer:
     inflation_radius: 0.1  # Adjusts the gradient of the costmap
     cost_scaling_factor: 10.0
+  footprint: [ [ -0.2, -0.2 ], [ -0.2, 0.2 ], [ 0.2, 0.2 ], [ 0.2, -0.2 ] ]
+  footprint_padding: 0.05  # Optional padding around the footprint
